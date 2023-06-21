@@ -8,6 +8,10 @@ const cars=(sequelize,DataTypes)=>sequelize.define('Cars',{
         type:DataTypes.INTEGER,
         allowNull:false,
     },
+    ownerId:{
+        type:DataTypes.INTEGER,
+        allowNull:false,
+    }
 });
 module.exports=cars;
 
