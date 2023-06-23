@@ -48,7 +48,6 @@ class Collection{
         
     }
    async ownerCars(id,model){
-    
           const records=await this.model.findOne(
             {where:{id:id},
             include:model
